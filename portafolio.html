@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Creativo | Isaroro Studio ✨</title>
-    <link rel="icon" type="image/png" href="Favicon.png" sizes="60x60">
+    <link rel="icon" type="image/png" href="Is.png" sizes="32x32">
     
     <!-- Scripts: Tailwind y Swiper -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,11 +21,12 @@
         .portfolio-card { border-radius: 55px; overflow: hidden; background: #fff; border: 1px solid #f1f5f9; transition: all 0.4s ease; cursor: pointer; }
         .portfolio-card:hover { transform: translateY(-10px); box-shadow: 0 30px 50px rgba(0,0,0,0.05); }
 
+        /* Estilo Sliders internos */
         .swiper { width: 100%; height: 100%; }
         .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
         .swiper-pagination-bullet-active { background: #DB2777 !important; }
 
-        /* Estilos del Modal (Ampliación) */
+        /* Estilo del Modal (Ampliación) */
         .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 200; backdrop-filter: blur(15px); align-items: center; justify-content: center; }
         .modal.active { display: flex; }
     </style>
@@ -47,110 +48,106 @@
         <div class="absolute top-40 -right-20 w-[600px] h-[600px] glow-pink -z-10"></div>
 
         <span class="inline-block border border-pink-100 text-pink-500 text-[10px] font-bold px-4 py-1.5 rounded-full uppercase mb-6 tracking-[0.25em] bg-pink-50/50 uppercase">Mundo Creativo</span>
-        <h1 class="text-6xl md:text-8xl font-bold text-[#2d1557] mb-8 tracking-tighter">
+        <h1 class="text-6xl md:text-8xl font-bold text-[#2d1557] mb-8 tracking-tighter leading-none">
             Portafolio <span class="text-gradient">Creativo</span>
         </h1>
-        <p class="text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
-            Explora mis proyectos. Haz clic en cada uno para conocer la técnica, los formatos de entrega y la historia detrás de cada trazo.
+        <p class="text-gray-400 max-w-2xl mx-auto font-light leading-relaxed italic">
+            "Explora la magia detrás de cada trazo digital hecho a mano."
         </p>
     </header>
 
-    <!-- SECCIÓN: SOBRE ISARORO Y TRANSPARENCIA -->
+    <!-- SECCIÓN: TRANSPARENCIA Y VALOR -->
     <section class="py-16 px-6 max-w-7xl mx-auto border-t border-gray-50">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div>
                 <span class="text-pink-500 text-[10px] font-bold uppercase tracking-widest mb-4 block">¿Quién es IsaRoro?</span>
                 <h2 class="text-4xl font-bold text-[#2d1557] mb-6 tracking-tight leading-none">Originalidad en cada píxel</h2>
                 <p class="text-gray-500 font-light leading-relaxed mb-6">
-                    Mi nombre es Isabella Rodriguez. Isaroro Studio nació de la evolución del arte manual (plastilina y lettering) hacia el universo digital. Mi valor más grande es la <strong>transparencia</strong>: cada obra es dibujada a mano en Procreate o modelada en Blender.
+                    Mi nombre es Isabella Rodriguez. Isaroro Studio nació de la evolución del arte manual hacia el universo digital. Mi valor más grande es la <strong>transparencia</strong>: cada obra es dibujada a mano.
                 </p>
                 <div class="p-6 bg-pink-50/50 rounded-3xl border border-pink-100">
                     <p class="text-sm font-bold text-pink-600 mb-2">🚫 Compromiso Ético:</p>
-                    <p class="text-xs text-gray-400 leading-relaxed italic">No utilizo Inteligencia Artificial. Mis ilustraciones son piezas únicas, con errores y aciertos humanos que les dan alma y calidad profesional.</p>
+                    <p class="text-xs text-gray-400 leading-relaxed italic">No utilizo Inteligencia Artificial. Mis ilustraciones son piezas únicas con alma humana y calidad profesional.</p>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-slate-50 p-6 rounded-[40px] text-center">
                     <span class="text-2xl mb-2 block">📄</span>
-                    <h4 class="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2d1557]">Agendas</h4>
-                    <p class="text-[9px] text-gray-400 uppercase italic">PDF Inteligente</p>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#2d1557]">PDF Inteligente</h4>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-[40px] text-center">
                     <span class="text-2xl mb-2 block">📐</span>
-                    <h4 class="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2d1557]">Vectores</h4>
-                    <p class="text-[9px] text-gray-400 uppercase italic">Archivos .AI / .SVG</p>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#2d1557]">Vectores .AI</h4>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-[40px] text-center">
                     <span class="text-2xl mb-2 block">🧊</span>
-                    <h4 class="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2d1557]">Diseño 3D</h4>
-                    <p class="text-[9px] text-gray-400 uppercase italic">Render y .GLB</p>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#2d1557]">Modelado 3D</h4>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-[40px] text-center">
                     <span class="text-2xl mb-2 block">🖍️</span>
-                    <h4 class="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#2d1557]">Libros</h4>
-                    <p class="text-[9px] text-gray-400 uppercase italic">300 DPI Impresión</p>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest text-[#2d1557]">300 DPI</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALERÍA DE 18 SLIDERS CON MODAL -->
+    <!-- GALERÍA DE 18 SLIDERS -->
     <section class="max-w-7xl mx-auto px-6 mb-32 pt-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             
-            <!-- CARD 1 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Papa-noel.jpeg', 'Dron de Papá Noel', 'En el Polo Norte del año 2170, la Navidad está a punto de transformarse. Acompaña a Arend en una aventura de amistad y tecnología. Libro ilustrado manualmente en formato digital, entregado en PDF de alta resolución.')">
+            <!-- PROYECTO 1 -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('papa-noel.jpeg', 'Dron de Papá Noel', 'Libro para colorear. Ilustración digital manual. Se entrega en PDF de alta resolución (300 DPI), optimizado para colorear o imprimir.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="Papa-noel.jpeg" alt=""></div>
-                            <div class="swiper-slide"><img src="Interior-papa.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="papa-noel.jpeg"></div>
+                            <div class="swiper-slide"><img src="Interior-papa.jpeg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10">
+                <div class="p-10 text-center">
                     <p class="text-[10px] font-bold text-pink-500 uppercase tracking-widest mb-2">Libros</p>
                     <h3 class="text-xl font-bold text-[#2d1557]">Dron de Papá Noel</h3>
                 </div>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Kwai.jpeg', 'Kwai Study Dolls', 'Serie de personajes estilo Kwai. Trazos vectoriales definidos. Entrega en formato PNG transparente y PDF para actividades didácticas.')">
+            <!-- PROYECTO 2 -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Kwai.jpeg', 'Kwai Study Dolls', 'Serie de personajes estilo Kwai. Trazos vectoriales definidos. Entrega en formato PNG transparente y PDF didáctico.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="Kwai.jpeg" alt=""></div>
-                            <div class="swiper-slide"><img src="Interior-kwai.jpeg" alt=""></div>
+                            <div class="swiper-slide"><img src="Kwai.jpeg"></div>
+                            <div class="swiper-slide"><img src="Interior-kwai.jpeg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10">
+                <div class="p-10 text-center">
                     <p class="text-[10px] font-bold text-purple-500 uppercase tracking-widest mb-2">Libros</p>
                     <h3 class="text-xl font-bold text-[#2d1557]">Kwai Study Dolls</h3>
                 </div>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Fairy.png', 'Fairies, fun and Fantasy', 'Libro de ilustraciones fantásticas. Diseñado para relajación creativa. Cada hada fue dibujada digitalmente preservando el estilo artístico Isaroro.')">
+            <!-- PROYECTO 3 -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Fairy.png', 'Fairies, fun and Fantasy', 'Libro de ilustraciones fantásticas. Diseñado para relajación creativa. Cada hada fue dibujada digitalmente con Procreate.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="Fairy.png" alt=""></div>
-                            <div class="swiper-slide"><img src="Interior-fairy.png" alt=""></div>
+                            <div class="swiper-slide"><img src="Fairy.png"></div>
+                            <div class="swiper-slide"><img src="Interior-fairy.png"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10">
+                <div class="p-10 text-center">
                     <p class="text-[10px] font-bold text-blue-500 uppercase tracking-widest mb-2">Libros</p>
-                    <h3 class="text-xl font-bold text-[#2d1557]">Fairies, Fantasy</h3>
+                    <h3 class="text-xl font-bold text-[#2d1557]">Fairies & Fantasy</h3>
                 </div>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Actividades.png', 'Libro Didáctico', 'Estructura pedagógica con diseño moderno. Se entrega como PDF inteligente para que los niños interactúen o impriman.')">
+            <!-- CARD 4: Libro didáctico -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Actividades.png', 'Libro Didáctico', 'Estructura pedagógica con diseño moderno. Se entrega como PDF inteligente interactivo.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -160,11 +157,11 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-pink-500 mb-2">Libros</p><h3 class="text-xl font-bold text-[#2d1557]">Actividades Didácticas</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-pink-500 mb-2 uppercase">Libros</p><h3 class="text-xl font-bold text-[#2d1557]">Actividades Didácticas</h3></div>
             </div>
 
-            <!-- CARD 5 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('oso.png', 'Valentine’s Day Special', 'Ilustración temática de alta resolución. Se entrega el diseño original en formato PNG y archivo de impresión para tarjetas.')">
+            <!-- CARD 5: Valentine's -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('oso.png', 'Valentine’s Day', 'Ilustración temática de alta resolución. Proceso manual digital sin uso de IA.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -174,11 +171,11 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-yellow-500 mb-2">Libros</p><h3 class="text-xl font-bold text-[#2d1557]">Valentine's Day</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-yellow-500 mb-2 uppercase">Libros</p><h3 class="text-xl font-bold text-[#2d1557]">Valentine's Day</h3></div>
             </div>
 
-            <!-- CARD 6 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Sofia.png', 'Sofía en la Selva', 'Storytelling visual para niños. Se entrega en PDF narrativo con ilustraciones vibrantes hechas a mano digitalmente.')">
+            <!-- CARD 6: Sofia -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Sofia.png', 'Sofía en la Selva', 'Storytelling visual para niños. Dibujado a mano digitalmente.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -188,115 +185,123 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-purple-500 mb-2">Libros</p><h3 class="text-xl font-bold text-[#2d1557]">Sofía en la Selva</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-purple-500 mb-2 uppercase">Libros</p><h3 class="text-xl font-bold text-[#2d1557]">Sofía en la Selva</h3></div>
             </div>
 
-            <!-- CARD 7 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Mounstruito.jpg', 'Proyecto Monstruito', 'Exploración de texturas digitales. Se entrega en formato PNG de alta resolución sin fondo para branding.')">
+            <!-- CARD 7: Monstruito -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Mounstruito.jpg', 'Proyecto Monstruito', 'Exploración de texturas y colores vibrantes. Formato PNG alta resolución.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="Mounstruito.jpg"></div>
+                            <div class="swiper-slide"><img src="Mounstruito-Interior.jpg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-pink-500 mb-2">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Proyecto Monstruito</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-pink-500 mb-2 uppercase">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Proyecto Monstruito</h3></div>
             </div>
 
-            <!-- CARD 8 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Hada.jpg', 'Hada del Bosque', 'Ilustración artística. Pintura digital en Procreate. Se entrega como archivo vectorial escalable para gran formato.')">
+            <!-- CARD 8: Hada -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Hada.jpg', 'Hada del Bosque', 'Pintura digital con acabados mágicos. Se entrega en PDF o PNG.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="Hada.jpg"></div>
+                            <div class="swiper-slide"><img src="Hada-Interior.jpg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-blue-500 mb-2">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Hada del Bosque</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-blue-500 mb-2 uppercase">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Hada del Bosque</h3></div>
             </div>
 
-            <!-- CARD 9 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Cinnamonroll.jpg', 'Cinnamonroll FanArt', 'Estilo Kwai profesional. Dibujado manual digital. Se entrega en PNG alta calidad.')">
+            <!-- CARD 9: Cinnamonroll -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Cinnamonroll.jpg', 'Cinnamonroll FanArt', 'Estilo tierno y profesional. Dibujado manual digital.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="Cinnamonroll.jpg"></div>
+                            <div class="swiper-slide"><img src="Cinnamonroll-Interior.jpg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-yellow-500 mb-2">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Cinnamonroll</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-yellow-500 mb-2 uppercase">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Cinnamonroll</h3></div>
             </div>
 
-            <!-- CARD 10 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Capibara.jpg', 'Capibara Kwai', 'Diseño de personaje original. Ilustración vectorial perfecta para stickers e impresión física.')">
+            <!-- CARD 10: Capibara -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Capibara.jpg', 'Capibara Kwai', 'Diseño de personaje vectorial. Alta calidad para impresión.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="Capibara.jpg"></div>
+                            <div class="swiper-slide"><img src="Capibara-Interior.jpg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-pink-500 mb-2">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Capibara Kwai</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-pink-500 mb-2 uppercase">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Capibara Kwai</h3></div>
             </div>
 
-            <!-- CARD 11 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Osito.jpg', 'Osito y Amigo', 'Ilustracion digital con pinceles de acuarela manual-digital. Se entrega en PNG 300 DPI.')">
+            <!-- CARD 11: Osito -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Osito.jpg', 'Osito Amigo', 'Acuarela digital. Un trazo suave que aporta calidez al diseño.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="Osito.jpg"></div>
+                            <div class="swiper-slide"><img src="Osito-Interior.jpg"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-purple-500 mb-2">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Osito Amigo</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-purple-500 mb-2 uppercase">Ilustración</p><h3 class="text-xl font-bold text-[#2d1557]">Osito Amigo</h3></div>
             </div>
 
-            <!-- CARD 12 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Kuromi.png', 'Kuromi 3D', 'Modelado 3D profesional en Blender. Se entrega el Render final en alta resolución o el archivo .GLB para visualización web.')">
+            <!-- CARD 12: Kuromi -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Kuromi.png', 'Kuromi 3D', 'Modelado 3D en Blender. Se entrega render final o archivo .GLB.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="Kuromi.png"></div>
+                            <div class="swiper-slide"><img src="Kuromi-Interior.png"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-blue-500 mb-2">Diseño 3D</p><h3 class="text-xl font-bold text-[#2d1557]">Kuromi 3D</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-blue-500 mb-2 uppercase">Diseño 3D</p><h3 class="text-xl font-bold text-[#2d1557]">Kuromi 3D</h3></div>
             </div>
 
-            <!-- CARD 13 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('hello.png', 'Hello Kitty 3D', 'Modelado tridimensional de personajes. Modelado en Blender, entrega de render y archivo de objeto.')">
+            <!-- CARD 13: Hello Kitty -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('hello.png', 'Hello Kitty 3D', 'Interpretación 3D en estilo minimalista. Modelado profesional.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="hello.png"></div>
+                            <div class="swiper-slide"><img src="hello-Interior.png"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-pink-500 mb-2">Diseño 3D</p><h3 class="text-xl font-bold text-[#2d1557]">Hello Kitty</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-pink-500 mb-2 uppercase">Diseño 3D</p><h3 class="text-xl font-bold text-[#2d1557]">Hello Kitty 3D</h3></div>
             </div>
 
-            <!-- CARD 14 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('mounstruo.png', 'Oso Kwai 3D', 'Diseño de juguete digital 3D. Modelado completo con materiales suavizados. Entrega en formato .OBJ / .GLB.')">
+            <!-- CARD 14: Oso 3D -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('mounstruo.png', 'Oso Kwai 3D', 'Modelado con materiales suaves. Entrega en formato digital 3D.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="mounstruo.png"></div>                        
+                            <div class="swiper-slide"><img src="mounstruo.png"></div>
+                            <div class="swiper-slide"><img src="mounstruo-Interior.png"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-purple-500 mb-2">Diseño 3D</p><h3 class="text-xl font-bold text-[#2d1557]">Oso Kwai 3D</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-purple-500 mb-2 uppercase">Diseño 3D</p><h3 class="text-xl font-bold text-[#2d1557]">Oso Kwai 3D</h3></div>
             </div>
 
-            <!-- CARD 15 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Planner.png', 'Planner Mensual', 'Planner personalizado. Se entrega PDF inteligente para usar en iPad o imprimir en casa.')">
+            <!-- CARD 15: Planner -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Planner.png', 'Planner Mensual', 'Agenda interactiva con hipervínculos. PDF inteligente para iPad.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -306,11 +311,11 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-yellow-500 mb-2">Diseño Personalizado</p><h3 class="text-xl font-bold text-[#2d1557]">Planner Mensual</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-yellow-500 mb-2 uppercase">Diseño</p><h3 class="text-xl font-bold text-[#2d1557]">Planner Mensual</h3></div>
             </div>
 
-            <!-- CARD 16 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Snoopy.png', 'Calendario Snoopy', 'Diseño gráfico personalizado. Ilustraciones restauradas digitalmente a mano. Entrega en PDF listo para impresión.')">
+            <!-- CARD 16: Snoopy -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Snoopy.png', 'Calendario Snoopy', 'Diseño gráfico personalizado y restaurado digitalmente.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -320,24 +325,25 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-pink-500 mb-2">Diseño Personalizado</p><h3 class="text-xl font-bold text-[#2d1557]">Calendario Snoopy</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-pink-500 mb-2 uppercase">Diseño</p><h3 class="text-xl font-bold text-[#2d1557]">Calendario Snoopy</h3></div>
             </div>
 
-            <!-- CARD 17 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Horario.png', 'Horario de Clases', 'Diseño de papelería digital. Se entrega archivo PDF editable o imagen JPG de alta definición para uso rápido.')">
+            <!-- CARD 17: Horario -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Horario.png', 'Horario de Clases', 'Papelería digital personalizada. Alta resolución.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="Horario.png"></div>
                             <div class="swiper-slide"><img src="Horario.png"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-purple-500 mb-2">Diseño Personalizado</p><h3 class="text-xl font-bold text-[#2d1557]">Horario Clases</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-purple-500 mb-2 uppercase">Diseño</p><h3 class="text-xl font-bold text-[#2d1557]">Horario Clases</h3></div>
             </div>
 
-            <!-- CARD 18 -->
-            <div class="portfolio-card shadow-sm" onclick="openModal('Agenda.png', 'Agenda de Disco', 'Concepto de agenda híbrida (Digital/Impresa). Entrega de PDF con hipervínculos y guías de corte para ensamble físico.')">
+            <!-- CARD 18: Agenda Discos -->
+            <div class="portfolio-card shadow-sm" onclick="openModal('Agenda.png', 'Agenda de Disco', 'Concepto híbrido: PDF interactivo listo para imprimir.')">
                 <div class="aspect-square bg-slate-100 relative">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -347,7 +353,7 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="p-10"><p class="text-[10px] font-bold text-blue-500 mb-2">Diseño Personalizado</p><h3 class="text-xl font-bold text-[#2d1557]">Agenda de Disco</h3></div>
+                <div class="p-10 text-center"><p class="text-[10px] font-bold text-blue-500 mb-2 uppercase">Diseño</p><h3 class="text-xl font-bold text-[#2d1557]">Agenda de Disco</h3></div>
             </div>
 
         </div>
@@ -357,11 +363,9 @@
     <div id="projectModal" class="modal px-6" onclick="closeModal()">
         <div class="bg-white max-w-5xl w-full rounded-[60px] overflow-hidden flex flex-col md:flex-row shadow-2xl relative" onclick="event.stopPropagation()">
             <button onclick="closeModal()" class="absolute top-8 right-8 text-3xl text-gray-300 hover:text-black transition">✕</button>
-            
             <div class="md:w-3/5 bg-slate-50 flex items-center justify-center p-8">
                 <img id="modalImg" src="" class="max-h-[70vh] rounded-[40px] shadow-2xl">
             </div>
-            
             <div class="md:w-2/5 p-12 flex flex-col justify-center text-left">
                 <h2 id="modalTitle" class="text-4xl font-bold text-[#2d1557] mb-6 tracking-tighter"></h2>
                 <div class="h-1 w-12 bg-pink-500 mb-8 rounded-full"></div>
